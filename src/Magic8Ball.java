@@ -57,8 +57,6 @@ public class Magic8Ball extends JFrame{
 		
 	}
 	
-	String [] ballPhrases = {"odds aren't good", "odds are good", "no", "yes", "count on it", "don't count on it", "maybe", "ask again"};
-	phrase = ballPhrases[(int)(Math.random() * ballPhrases.length)];
 	
 	private void randomizePhrase() {
 		String [] ballPhrases = {"odds aren't good", "odds are good", "no", "yes", "count on it", "don't count on it", "maybe", "ask again"};
