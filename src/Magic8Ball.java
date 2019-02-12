@@ -68,12 +68,6 @@ public class Magic8Ball extends JFrame{
 		
 	}
 	
-
-
-	/*private void add(JLabel titleLabel, String pageStart) {
-		// TODO Auto-generated method stub
-		
-	}*/
 	
 	public static void main(String[] args) {
 		try {
