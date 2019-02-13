@@ -15,6 +15,9 @@ import javax.swing.UIManager;
 
 public class Magic8Ball extends JFrame{
 	
+	
+	private JLabel titleLabel;
+	
 	public Magic8Ball() {
 		
 		initGUI();
@@ -33,7 +36,7 @@ public class Magic8Ball extends JFrame{
 
 	public void initGUI(){
 		
-		JLabel titleLabel = new JLabel("Ask a yes or no question and shake.");
+		titleLabel = new JLabel("Ask a yes or no question and shake.");
 		
 		Font titleFont = new Font (Font.SERIF, Font.BOLD + Font.ITALIC, 20);
 		titleLabel.setFont(titleFont);
@@ -64,7 +67,7 @@ public class Magic8Ball extends JFrame{
 	private void randomizePhrase() {
 		String [] ballPhrases = {"odds aren't good", "odds are good", "no", "yes", "count on it", "don't count on it", "maybe", "ask again"};
 		String phrase = ballPhrases[(int)(Math.random() * ballPhrases.length)];
-		JOptionPane.showMessageDialog(null, phrase);
+		titleLabel.setText(phrase);
 		
 	}
 	
